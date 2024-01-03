@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <!-- Медиа-запросы.
-    Пример показывает, что запросы можно размещать:
-        - в коде HTML, в теге <link> подключая внешний файл styleMq1.css
-        - в коде HTML, в теге <style>
-        - прямо в коде CSS, где бы он ни был расположен
+    Пример для показа новой записи условий <, >, =
 
-     Демонстрация происходит при уменьшении ширины экрана:
-        - до 768px: срабатывает стиль во внешнем файле.
-        - до 768px: срабатывает стиль в теге <style>.
+     Условие срабатывает для ширины  600px <= width <= 1000px
  -->
 <head>
     <meta charset="UTF-8">  <!-- -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge">  Для IE -->
-    <title>Пример 1. резинового дизайна.</title>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 720px)" href="styleMq1.css">
-    <link rel="stylesheet" type="text/css" media="print" href="print.css">
+    <title>Пример 2. Media-Query 2.</title>
     <!-- Звадаем стили элементам   -->
     <style>
         /* --- медиа правила ---- */
-        @media screen and (width <= 768px)  {
+        @media screen and ( 800px <= width <= 1000px)  {
              body {
                 background-color: yellow;
                 color: blue;

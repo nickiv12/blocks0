@@ -1,0 +1,19 @@
+ol {
+    background-color: red;
+}
+
+/* Make radio buttons and check boxes larger if we have an inaccurate primary pointing device */
+@media (pointer:coarse) {
+  input[type="checkbox"], input[type="radio"] {
+    min-width: 30px;
+    min-height: 40px;
+    background: transparent;
+    width: 600px
+  }
+}
+
+
+@media (width >= 600px) and (width <= 800px) {
+  /* Стили, применяемые, если ширина экрана
+  больше или равна 600px и меньше или равна 800px */
+}
