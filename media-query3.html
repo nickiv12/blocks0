@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Медиа-запросы.
+    Пример показывает разные медиа-характеристики устройства.
+  -->
+<head>
+    <meta charset="UTF-8">  <!-- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Media Query 3.</title>
+    <style>
+        /* =====  медиа правила ================================== */
+        /* ------ Ширина экрана ------ */
+        @media screen and (max-width: 719px)  { .max-width-1 { background-color: green; }}
+        @media screen and (720px <= width <= 900px)  { .width-2 { background-color: green; }}
+        @media screen and (901px <= width <= 1366px) { .width-3 { background-color: green; }}
+        @media screen and (1367px <= width <= 1920px) { .width-4 { background-color: green; }}
+
+        /* --- Стили страницы */
+        .container {
+            width: 100%;  /* Ширина сайта */
+            border: 1px solid black;  /* Рамка сайта */
+            font-size: 16px;
+            }
+        h3 {
+            width: 90%;
+            border: 1px solid red;
+            }
+        p {
+            border: 1px solid green;
+            width: 80%;
+            }
+        ol {
+            border: 1px solid violet;
+            width: 70%;
+            list-style-position: inside;  /* Маркер внутри списка */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3> Показ медиа-характеристик устройства пользователя. № попытки 0</h3>
+        <p> В этом примере будут показываться медиа-характеристики устройства пользователя.
+            Медиа-характеристики перечислены в списке. Те характеристики, которые существуют
+            на устройстве пользователе будут иметь зеленый фон.
+        </p>
+        <h3> Устройство пользователя имеет такие медиа-характеристики:  </h3>
+        <ol type="a"> --- ШИРИНА ОКНА ПРОСМОТРА БРАУЗЕРА ---
+            <li class="max-width-1"> @media screen and (max-width: 719px) </li>
+            <li class="width-2"> @media screen and (720px <= width <= 900px) </li>
+            <li class="width-3"> @media screen and (901px <= width <= 1366px) </li>
+            <li class="width-4"> @media screen and (1367px <= width <= 1920x) </li>
+            <li> Гибкость в зависимости от размера экрана</li>
+            <li> Media Queries</li>
+        </ol>
+    </div>
+</body>
+</html>
