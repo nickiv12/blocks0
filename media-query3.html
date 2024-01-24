@@ -15,6 +15,12 @@
         @media screen and (901px <= width <= 1366px) { .width-3 { background-color: green; }}
         @media screen and (1367px <= width <= 1920px) { .width-4 { background-color: green; }}
 
+        /*  --- INTERACTION MEDIA-FEATURES --- */
+        @media screen and (pointer: none) { .pointer-1 { background-color: green; }}
+        @media screen and (pointer: coarse) { .pointer-2 { background-color: green; }}
+        @media screen and (pointer: fine) { .pointer-3 { background-color: green; }}
+
+
         /* --- Стили страницы */
         .container {
             width: 100%;  /* Ширина сайта */
@@ -51,6 +57,11 @@
             <li class="width-4"> @media screen and (1367px <= width <= 1920x) </li>
             <li> Гибкость в зависимости от размера экрана</li>
             <li> Media Queries</li>
+        </ol>
+                <ol type="a"> --- INTERACTION MEDIA-FEATURES ---
+            <li class="pointer-1"> @media screen and (pointer: none) </li>
+            <li class="pointer-2"> @media screen and (pointer: coarse) </li>
+            <li class="pointer-3"> @media screen and (pointer: fine) </li>
         </ol>
     </div>
 </body>
